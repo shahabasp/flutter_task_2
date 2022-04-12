@@ -14,6 +14,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https:/
 
+Project Video Sample:
+
 https://user-images.githubusercontent.com/101097800/163015011-c952d71f-fd0b-4690-8e52-2a210ba6bd3a.mp4
 
 /flutter.dev/docs), which offers tutorials,
