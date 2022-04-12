@@ -18,8 +18,8 @@ Project Video Sample:
 
 https://user-images.githubusercontent.com/101097800/163015011-c952d71f-fd0b-4690-8e52-2a210ba6bd3a.mp4
 
-
-(https://user-images.githubusercontent.com/101097800/163018256-7cca13ee-ae54-4967-95c0-203368873cec.png)
+Screenshot1
+https://user-images.githubusercontent.com/101097800/163018256-7cca13ee-ae54-4967-95c0-203368873cec.png
 
 
 /flutter.dev/docs), which offers tutorials,
