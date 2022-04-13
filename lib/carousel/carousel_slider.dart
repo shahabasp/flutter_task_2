@@ -9,9 +9,7 @@ class CarouselWithDotsPage extends StatefulWidget {
     'assets/image/image1.jpeg'
   ];
 
-   CarouselWithDotsPage({Key? key}) : super(key: key);
-
-
+  CarouselWithDotsPage({Key? key}) : super(key: key);
 
   @override
   _CarouselWithDotsPageState createState() => _CarouselWithDotsPageState();
@@ -22,6 +20,7 @@ class _CarouselWithDotsPageState extends State<CarouselWithDotsPage> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     final List<Widget> imageSliders = widget.imgList
         .map((item) => Container(
               child: ClipRRect(
@@ -31,8 +30,7 @@ class _CarouselWithDotsPageState extends State<CarouselWithDotsPage> {
                 child: Image.asset(
                   item,
                   fit: BoxFit.cover,
-                  width: 1000,
-                  height: 1000,
+                  width: size.width * 0.9,
                 ),
               ),
             ))
@@ -46,7 +44,6 @@ class _CarouselWithDotsPageState extends State<CarouselWithDotsPage> {
               viewportFraction: 1.0,
               autoPlay: true,
               enlargeCenterPage: false,
-              aspectRatio: 2.0,
               onPageChanged: (index, reason) {
                 setState(() {
                   _current = index;

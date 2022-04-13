@@ -23,7 +23,10 @@ class PracticeCategory extends StatelessWidget {
               children: [
                 Text(
                   'Login Page UI',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: AppColor.homePageSubtitle),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                      color: AppColor.homePageSubtitle),
                 ),
                 GestureDetector(
                   onTap: () {},
@@ -40,7 +43,10 @@ class PracticeCategory extends StatelessWidget {
                     child: Center(
                       child: Text(
                         'START',
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: AppColor.homePageTitle),
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: AppColor.homePageTitle),
                       ),
                     ),
                   ),
@@ -56,8 +62,12 @@ class PracticeCategory extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
-            Text('Estimated time : 1 Day',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: AppColor.homePageSubtitle),
+            Text(
+              'Estimated time : 1 Day',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: AppColor.homePageSubtitle),
             )
           ],
         ),
@@ -69,7 +79,8 @@ class PracticeCategory extends StatelessWidget {
 class NewWidget2 extends StatelessWidget {
   final String image;
   const NewWidget2({
-    Key? key, required this.image,
+    Key? key,
+    required this.image,
   }) : super(key: key);
 
   @override
@@ -78,7 +89,7 @@ class NewWidget2 extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: Colors.white,
-          image:  DecorationImage(
+          image: DecorationImage(
               image: AssetImage(
                 image,
               ),

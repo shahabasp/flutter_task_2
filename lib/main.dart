@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tutorial_app/screen/login.dart';
-
+import 'package:flutter/services.dart';
 
 import 'colors.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]).then((_) {
+    runApp(new MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {

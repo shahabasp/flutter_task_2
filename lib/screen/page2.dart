@@ -46,41 +46,43 @@ class _ScreenCategoryState extends State<ScreenCategory>
               width: MediaQuery.of(context).size.width,
               height: 140,
               child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    GestureDetector(
-                      child: Icon(
-                        Icons.arrow_back_ios,
-                        size: 20,
-                        color: AppColor.secondPageTopIconColor,
-                      ),
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  GestureDetector(
+                    child: Icon(
+                      Icons.arrow_back_ios,
+                      size: 20,
+                      color: AppColor.secondPageTopIconColor,
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text('Flutter Development',
-                      style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: AppColor.secondPageTitleColor),
-                    ),
-                  ],
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    'Flutter Development',
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w600,
+                        color: AppColor.secondPageTitleColor),
+                  ),
+                ],
               ),
             ),
             Expanded(
                 child: Container(
               decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(26)),
+                color: Colors.white,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(26)),
               ),
               child: Column(children: [
                 Container(
                   decoration: BoxDecoration(
                       color: AppColor.homePageTitle.withOpacity(1),
                       borderRadius: BorderRadius.circular(40),
-                      boxShadow: const [
-                        BoxShadow(blurRadius: 5)
-                      ]),
+                      boxShadow: const [BoxShadow(blurRadius: 5)]),
                   height: 50,
                   child: TabBar(
                       indicatorWeight: 0.1,
@@ -94,11 +96,13 @@ class _ScreenCategoryState extends State<ScreenCategory>
                       ]),
                 ),
                 Expanded(
-                  child: TabBarView(controller: _tabcontroller, children: const [
-                    ChaptersCategoryList(),
-                    PracticeCategory(),
-                    TestCategory()
-                  ]),
+                  child: TabBarView(
+                      controller: _tabcontroller,
+                      children: const [
+                        ChaptersCategoryList(),
+                        PracticeCategory(),
+                        TestCategory()
+                      ]),
                 )
               ]),
             ))
